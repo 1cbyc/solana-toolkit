@@ -1,0 +1,70 @@
+{
+  "name": "solana-toolkit",
+  "version": "2.0.0",
+  "description": "Sophisticated Solana blockchain development toolkit for professional applications",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint src/**/*.js --fix",
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "docs": "jsdoc -c jsdoc.json",
+    "prepublishOnly": "npm run test && npm run build"
+  },
+  "keywords": [
+    "solana",
+    "blockchain",
+    "web3",
+    "cryptocurrency",
+    "defi",
+    "spl-tokens",
+    "smart-contracts",
+    "wallet",
+    "transactions"
+  ],
+  "author": "1cbyc",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/1cbyc/solana-toolkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/1cbyc/solana-toolkit/issues"
+  },
+  "homepage": "https://github.com/1cbyc/solana-toolkit#readme",
+  "dependencies": {
+    "@solana/spl-token": "^0.4.0",
+    "@solana/web3.js": "^1.91.8",
+    "bs58": "^5.0.0",
+    "solana-toolkit": "^0.0.7",
+    "tweetnacl": "^1.0.3",
+    "tweetnacl-util": "^0.15.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "@eslint/js": "^9.0.0",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "eslint": "^9.0.0",
+    "jest": "^29.7.0",
+    "jsdoc": "^4.0.2",
+    "rollup": "^4.12.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "src",
+    "dist",
+    "README.md",
+    "LICENSE.md"
+  ]
+}
