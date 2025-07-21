@@ -4,12 +4,12 @@
 
 ### Installation
 ```bash
-npm install solana-toolkit
+npm install solana-dev-toolkit
 ```
 
 ### Basic Usage
 ```javascript
-import SolanaToolkit from 'solana-toolkit';
+import SolanaToolkit from 'solana-dev-toolkit';
 
 // Initialize the toolkit
 const toolkit = new SolanaToolkit('https://api.devnet.solana.com', {

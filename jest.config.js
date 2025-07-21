@@ -1,6 +1,8 @@
 export default {
   testEnvironment: 'node',
-  transform: {},
+  transform: {
+    '^.+\\.js$': 'babel-jest'
+  },
   collectCoverageFrom: [
     'src/**/*.js',
     '!src/**/*.test.js',
